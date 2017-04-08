@@ -1,0 +1,16 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: spring-cloud-eureka
+'@zone': nh
+'@datacenter': idc-nh
+eureka:
+  client:
+    region: idc
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/eureka/
+    register-with-eureka: true
+management:
+  security:
+    enabled: false
